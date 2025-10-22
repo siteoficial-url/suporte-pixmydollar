@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suporte Aberto - Pix My Dollar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Cores: Azul Marinho (#1e3a8a) - Primária, Preto Escuro (#1a1a1a) - Fundo, Branco (#ffffff), Azul Claro/Ciano (#06b6d4) - Destaque/Hover */
+        :root {
+            --cor-primaria: #1e3a8a; /* Azul Marinho Profissional */
+            --cor-fundo: #1a1a1a; /* Preto Escuro */
+            --cor-texto: #e0e0e0; /* Cinza Claro para Leitura em fundo escuro */
+            --cor-branco: #ffffff;
+            --cor-destaque: #06b6d4; /* Ciano Moderno */
+            --cor-sombra: rgba(255, 255, 255, 0.08); /* Sombra mais clara para fundo escuro */
+            --cor-container-fundo: #2a2a2a; /* Fundo do container ligeiramente mais claro que o body */
+        }
+
+        /* Reset Básico e Fonte Moderna */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: var(--cor-container-fundo);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px var(--cor-sombra);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px var(--cor-sombra);
+        }
+
+        h1 {
+            color: var(--cor-branco);
+            font-weight: 700;
+            margin-bottom: 10px;
+            font-size: 2em;
+        }
+
+        p {
+            margin-bottom: 30px;
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .logo-pix {
+            font-size: 1.5em;
+            font-weight: 700;
+            color: var(--cor-destaque);
+            margin-bottom: 20px;
+            display: block;
+        }
+
+        /* Estilo do Botão Moderno e Profissional */
+        .btn-suporte {
+            display: inline-block;
+            background-color: var(--cor-primaria);
+            color: var(--cor-branco);
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.1em;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.1s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-suporte:hover {
+            background-color: var(--cor-destaque);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-suporte:active {
+            transform: scale(0.98);
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 600px) {
+            .container {
+                padding: 30px 20px;
+                border-radius: 8px;
+            }
+            h1 {
+                font-size: 1.5em;
+            }
+            .btn-suporte {
+                padding: 12px 20px;
+                font-size: 1em;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <span class="logo-pix">PIX MY DOLLAR</span>
+        <h1>Suporte Aberto ao Cliente</h1>
+        
+        <p>Estamos aqui para ajudar você com todas as suas dúvidas sobre transações, chaves Pix, conversões e qualquer outro problema ou sugestão. Clique no botão abaixo para iniciar uma conversa com nossa equipe de suporte.</p>
+        
+        <a href="https://wa.link/2o84jm" class="btn-suporte" target="_blank">
+            Falar com um Atendente
+        </a>
+    </div>
+
+</body>
+</html>
